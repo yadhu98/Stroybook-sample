@@ -1,5 +1,3 @@
-import type { Meta, StoryObj } from "@storybook/react";
-
 import {Banner} from './Banner'
 
 
@@ -10,16 +8,16 @@ const meta = {
 
 export default meta
 
-type Story = StoryObj<typeof meta>
+// type Story = StoryObj<typeof meta>
 
-export const Info:Story = {
+export const Info = {
     args : {
         info : 'primary',
         children : "Hello"
     }
 }
 
-export const Danger:Story = {
+export const Danger = {
     args : {
         info : 'danger',
         children : "Hello this is danger"

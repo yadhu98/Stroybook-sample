@@ -5,10 +5,11 @@ export interface BannerType  {
 }
 export const Banner = ({info = 'primary',children} : BannerType)  => {
     const styles ={
-        backgroundColor : info === 'primary' ? 'blue' : info === 'danger' ? 'red' : 'white'
+        backgroundColor : info === 'primary' ? 'blue' : info === 'danger' ? 'red' : 'white',
+        color : info === 'primary' ? 'pink' : info === 'danger' ? 'blue' : 'black'
     }
   return (
-    <div style={{backgroundColor : styles.backgroundColor}}>
+    <div style={styles}>
         {children}
     </div>
   )
